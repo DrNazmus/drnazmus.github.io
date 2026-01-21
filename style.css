@@ -138,6 +138,46 @@ footer {
   color: #40FF18;
 }
 
+/* Contact section animation */
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap; /* stacks on mobile */
+}
+
+.contact-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateX(-50px); /* start left */
+  transition: all 1s ease;
+}
+
+.contact-text {
+  max-width: 400px;
+  opacity: 0;
+  transform: translateX(50px); /* start right */
+  transition: all 1s ease;
+}
+
+/* When active, slide to original position and fade in */
+.contact-container.active .contact-img {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.contact-container.active .contact-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
 
 
 
