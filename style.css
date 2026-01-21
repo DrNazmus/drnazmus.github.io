@@ -34,7 +34,7 @@ body {
 
 .btn {
   display: inline-block;
-  background: #FF5F00;
+  background: #FFA500;
   color: black;
   padding: 12px 25px;
   text-decoration: none;
@@ -42,7 +42,7 @@ body {
 }
 
 .btn:hover {
-  background: #16a34a;
+  background: #FF6600;
   transform: scale(1.05);
 }
 
