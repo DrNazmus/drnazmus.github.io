@@ -16,11 +16,33 @@ body {
 }
 
 .hero {
-  background: #111827;
+  background: url('great.jpg') no-repeat center center;
+  background-size: cover; /* ensures it fills the hero section */
   color: white;
   text-align: center;
   padding: 80px 20px;
+  position: relative;
 }
+
+/* Optional: add dark overlay for text readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5); /* semi-transparent black overlay */
+  z-index: 0;
+}
+
+.hero h1,
+.hero p,
+.hero .btn {
+  position: relative; /* bring text above overlay */
+  z-index: 1;
+}
+
 
 .hero h1 {
   font-size: 3rem;
