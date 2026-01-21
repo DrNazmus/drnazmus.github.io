@@ -121,7 +121,7 @@ footer {
 }
 
 .logo {
-  width: 200px;       /* Adjust size */
+  width: 100px;       /* Adjust size */
   height: auto;      /* Maintain aspect ratio */
   margin-bottom: 20px;
 }
