@@ -1,3 +1,5 @@
+document.getElementById("year").textContent = new Date().getFullYear();
+
 window.addEventListener("scroll", () => {
   document.querySelectorAll(".reveal").forEach(el => {
     const top = el.getBoundingClientRect().top;
