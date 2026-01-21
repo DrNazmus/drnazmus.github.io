@@ -84,11 +84,12 @@ body {
 }
 
 .card {
-  background: white;
+  background: #FFEB3B;
   padding: 25px;
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  font-weight: bold;
 }
 
 .light {
