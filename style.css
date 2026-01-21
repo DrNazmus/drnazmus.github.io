@@ -24,7 +24,7 @@ body {
   position: relative;
 }
 
-/* Optional: add dark overlay for text readability */
+
 .hero::before {
   content: "";
   position: absolute;
