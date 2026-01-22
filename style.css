@@ -38,9 +38,10 @@ body {
 
 .hero h1,
 .hero p,
-.hero .btn {
-  position: relative; /* bring text above overlay */
-  z-index: 1;
+.hero .btn,
+.hero .logo {
+  position: relative;
+  z-index: 2;
 }
 
 
@@ -144,10 +145,14 @@ footer {
 }
 
 .logo {
-  width: 100px;       /* Adjust size */
-  height: auto;      /* Maintain aspect ratio */
+  width: 120px;
+  height: auto;
   margin-bottom: 20px;
+  position: relative;
+  z-index: 2;               /* ensures it's above overlay */
+  filter: brightness(1.3); /* makes it brighter */
 }
+
 
 .hero {
   display: flex;
