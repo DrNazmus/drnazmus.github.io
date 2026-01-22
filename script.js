@@ -21,3 +21,18 @@ window.addEventListener("scroll", () => {
 
 // Dynamic year
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Typing effect for hero tagline
+const text = "B2B Lead Generation & Cold Email Specialist";
+let index = 0;
+
+function typeEffect() {
+  if (index < text.length) {
+    document.getElementById("typing").textContent += text.charAt(index);
+    index++;
+    setTimeout(typeEffect, 60);
+  }
+}
+
+window.addEventListener("load", typeEffect);
+
