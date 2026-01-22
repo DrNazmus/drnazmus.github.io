@@ -78,6 +78,13 @@ body {
   margin-bottom: 20px;
 }
 
+.hero-tagline {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  min-height: 1.5em; /* prevents layout jump */
+}
+
+
 .btn {
   display: inline-block;
   background: #FFA500;
